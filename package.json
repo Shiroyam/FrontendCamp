@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "install": "lerna bootstrap",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "stylelint": "lerna run stylelint",
+    "test": "lerna run test --parallel",
+    "storybook:build": "lerna run storybook:build",
+    "storybook": "lerna run storybook",
+    "prepare": "husky install"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lerna": "^6.6.2",
+    "lint-staged": "^13.2.2"
+  }
+}
