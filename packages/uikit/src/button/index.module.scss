@@ -1,0 +1,35 @@
+.button {
+  padding: 1rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: var(--border-radius);
+  transition: all 500ms ease-in-out;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &:not(:disabled):active {
+    scale: 0.8;
+  }
+}
+
+.filled {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+
+  &:not(:disabled):hover {
+    color: var(--color-white);
+    opacity: 0.8;
+  }
+}
+
+.outline {
+  color: var(--color-primary);
+  border: var(--border-size) solid var(--color-primary);
+
+  &:not(:disabled):hover {
+    color: var(--color-white);
+    background-color: var(--color-primary)
+  }
+}
