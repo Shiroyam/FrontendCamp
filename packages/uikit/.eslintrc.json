@@ -14,10 +14,8 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react-refresh", "css-modules"],
+  "plugins": ["react-refresh"],
   "rules": {
-    "react-refresh/only-export-components": "warn",
-    "css-modules/no-unused-class": [2, { "camelCase": true }],
-    "css-modules/no-undef-class": [2, { "camelCase": true }]
+    "react-refresh/only-export-components": "warn"
   }
 }
