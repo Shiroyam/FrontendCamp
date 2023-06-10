@@ -16,7 +16,7 @@ export const Input = ({ className, error, errorText, variant = "filled", ...prop
   return (
     <div className={styles.wrapper}>
       <input className={inputClass} {...props} />
-      {error ? <label className={styles.errorText}>{errorText}</label> : null}
+      {error ? <label className={styles["error-text"]}>{errorText}</label> : null}
     </div>
   )
 }
