@@ -1,4 +1,4 @@
-export const Shortname = (name: string | undefined): string => {
+export const getShortname = (name: string | undefined): string => {
   if (!name) {
     return ""
   }
