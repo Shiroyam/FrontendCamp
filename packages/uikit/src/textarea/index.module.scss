@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+
+  .error-container {
+    position: relative;
+    
+    .textarea {
+      resize: vertical;
+
+      position: relative;
+
+      width: 100%;
+      height: auto;
+      min-height: 3rem;
+      padding: 0.75rem;
+
+      color: var(--color-black-4);
+
+      border: var(--border-size) solid var(--color-black-3);
+      border-radius: var(--border-radius);
+      outline: none;
+    }
+
+    .error {
+      color: var(--color-error);
+      border-color: var(--color-error);
+    }
+
+    .count {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      color: var(--color-black-3);
+    }
+  }
+
+  .error-text {
+    position: relative;
+    top: 100%;
+    left: 0;
+
+    margin-top: 0.5rem;
+
+    font-size: 0.75rem;
+    color: var(--color-error);
+  }
+}

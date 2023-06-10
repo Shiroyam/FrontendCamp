@@ -6,5 +6,5 @@ export { Select, type SelectProps } from "./select"
 export { Checkbox, type CheckboxProps } from "./checkbox"
 export { Radio, type RadioProps } from "./radio"
 export { Avatar, type AvatarProps } from "./avatar"
-//textarea
+export { Textarea, type TextareaProps } from "./textarea"
 //steps
