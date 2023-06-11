@@ -7,4 +7,4 @@ export { Checkbox, type CheckboxProps } from "./checkbox"
 export { Radio, type RadioProps } from "./radio"
 export { Avatar, type AvatarProps } from "./avatar"
 export { Textarea, type TextareaProps } from "./textarea"
-//steps
+export { Step, Stepper, type StepperProps, type StepProps } from "./stepper"
