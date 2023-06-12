@@ -15,14 +15,25 @@ export interface StepProps {
 
 export const Stepper = ({ onStepClick, active, children }: StepperProps) => {
   return (
-    <div className={styles.stepper}>
+    <div role="tablist" className={styles.stepper}>
       {Object.values(children).map((child, index) => {
+        const flagActive = index === active
+        const flagCompleted = index < active
+        const id = `step${index}`
+
         const stepClass = cn(styles.step, {
-          [styles.active]: index === active,
-          [styles.completed]: index < active,
+          [styles.active]: flagActive,
+          [styles.completed]: flagCompleted,
         })
         return (
-          <div key={index} className={stepClass} onClick={() => onStepClick(index)}>
+          <div
+            role="tab"
+            aria-selected={flagActive}
+            id={id}
+            key={index}
+            className={stepClass}
+            onClick={() => onStepClick(index)}
+          >
             {child}
           </div>
         )
