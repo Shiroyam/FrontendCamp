@@ -1,3 +1,4 @@
+import React from "react"
 import type { Preview } from "@storybook/react"
 import "../src/styles/index.scss"
 
@@ -12,5 +13,14 @@ const preview: Preview = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => (
+    <>
+      <div id="portal-root" />
+      <Story />
+    </>
+  ),
+]
 
 export default preview
