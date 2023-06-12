@@ -64,7 +64,7 @@
 .active {
   .wrapper {
     .dot {
-      background-color: var(--color-primary) !important;
+      background-color: var(--color-primary);
 
       &::before {
         content: "";
@@ -84,12 +84,12 @@
 
 .completed {
   &::after {
-    background-color: var(--color-primary) !important;
+    background-color: var(--color-primary);
   }
 
   .wrapper {
     .dot {
-      background-color: var(--color-primary) !important;
+      background-color: var(--color-primary);
     }
   }
 }
