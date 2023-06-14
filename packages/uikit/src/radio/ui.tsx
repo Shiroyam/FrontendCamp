@@ -10,9 +10,9 @@ export const Radio = ({ label, className, ...props }: RadioProps) => {
   const radioClass = cn(styles.radio, className)
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <input className={radioClass} type="radio" {...props} />
-      {label ? <label>{label}</label> : null}
-    </>
+      {label ? <label className={styles.label}>{label}</label> : null}
+    </div>
   )
 }
