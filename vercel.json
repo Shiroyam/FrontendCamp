@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "apps/web/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "build": {
+          "command": "npm install && npm run build",
+          "cwd": "apps/web"
+        }
+      }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/apps/web/index.html" }]
+}
