@@ -1,13 +1,14 @@
 .wrapper {
   position: relative;
   display: inline-block;
-  width: auto;
+  width: 100%;
   color: var(--color-black-4);
 
   .select {
     position: relative;
     z-index: 1;
 
+    width: 100%;
     padding: 0.75rem 1.8rem 0.75rem 0.75rem;
 
     appearance: none;

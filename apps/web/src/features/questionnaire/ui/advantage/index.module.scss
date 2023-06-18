@@ -1,0 +1,23 @@
+.form {
+  margin-top: 1.5rem;
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (width <= 26.5625em) {
+ .buttons {
+  flex-direction: column;
+
+  button {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+ }
+}

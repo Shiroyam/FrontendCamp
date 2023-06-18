@@ -17,7 +17,7 @@ export const Textarea = ({ error, errorText, className, value, ...props }: Texta
   return (
     <div className={styles.wrapper}>
       <div className={styles["error-container"]}>
-        <textarea className={textareaClass} {...props} />
+        <textarea value={value} className={textareaClass} {...props} />
         <div className={styles.count}>{count}</div>
       </div>
       {error ? <label className={styles["error-text"]}>{errorText}</label> : null}

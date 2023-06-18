@@ -1,0 +1,22 @@
+.advantage {
+  .button {
+    margin-top: 0.5rem;
+    padding: 1rem;
+
+    .svg {
+      fill: var(--color-primary);
+    }
+
+    &:hover {
+      .svg {
+        fill: var(--color-white);
+      }
+    }
+  }
+
+  .error {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-error);
+  }
+}
