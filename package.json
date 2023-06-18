@@ -2,16 +2,19 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "install": "lerna bootstrap",
-    "start": "lerna run start --parallel",
-    "build": "lerna run build",
-    "lint": "lerna run lint",
-    "format": "lerna run format",
-    "stylelint": "lerna run stylelint",
-    "test": "lerna run test --parallel",
+    "build": "cd apps/web && npm run build",
+    "install": "cd apps/web && npm install",
+    "start": "cd apps/web && npm run start",
+    "install:lerna": "lerna bootstrap",
+    "start:lerna": "lerna run start --parallel",
+    "build:lerna": "lerna run build",
+    "lint:lerna": "lerna run lint",
+    "format:lerna": "lerna run format",
+    "stylelint:lerna": "lerna run stylelint",
+    "test:lerna": "lerna run test --parallel",
     "storybook:build": "lerna run storybook:build",
-    "storybook": "lerna run storybook",
-    "prepare": "husky install"
+    "storybook:lerna": "lerna run storybook",
+    "preparev": "husky install"
   },
   "workspaces": [
     "apps/*",
