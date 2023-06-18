@@ -2,10 +2,6 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "cd apps/web && npm run build",
-    "install": "cd apps/web && npm install",
-    "start": "cd apps/web && npm run start",
-    "install:lerna": "lerna bootstrap",
     "start:lerna": "lerna run start --parallel",
     "build:lerna": "lerna run build",
     "lint:lerna": "lerna run lint",
