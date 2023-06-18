@@ -6,7 +6,6 @@ body {
   align-items: center;
   justify-content: center;
 
-  height: 100vh;
 
   font-family: var(--font);
 
@@ -16,4 +15,5 @@ body {
 #root {
   width: 100%;
   max-width: 56rem;
+  margin-top: 5%;
 }
