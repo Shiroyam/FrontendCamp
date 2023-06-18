@@ -6,6 +6,6 @@
   "plugins": ["react-refresh"],
   "rules": {
     "react-refresh/only-export-components": "warn",
-    "react-hooks/rules-of-hooks": "false"
+    "react-hooks/rules-of-hooks": 0
   }
 }
