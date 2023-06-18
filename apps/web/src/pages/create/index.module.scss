@@ -1,0 +1,29 @@
+.main {
+  max-width: 56.25rem;
+  padding: 3.75rem 6.875rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+
+  .from {
+    margin-top: 4rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (width <= 48em) {
+  .main {
+   padding: 2rem 5rem;
+  }
+ }
+
+
+@media screen and (width <= 26.5625em) {
+ .main {
+  padding: 1.5rem 3rem;
+ }
+}
