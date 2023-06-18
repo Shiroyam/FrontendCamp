@@ -1,0 +1,58 @@
+.modal {
+  display: grid;
+  grid-template-areas: "title cross"
+                       "error error"
+                       ". button";
+  grid-template-rows: 1fr 1fr / 1fr;
+
+  width: 40%;
+  min-width: 30rem;
+  height: 60%;
+  min-height: 30rem;
+  padding: 2rem;
+
+  .title {
+    grid-area: title;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .button{
+    grid-area: button;
+  }
+
+  .cross {
+    cursor: pointer;
+    grid-area: cross;
+    justify-self: end;
+  }
+
+  .error {
+    grid-area: error;
+    justify-self: center;
+  }
+}
+
+@media screen and (width <= 31.25em){
+  .modal {
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0;
+  }
+}
+
+@media screen and (width <= 23.4375em){
+  .modal {
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0;
+  }
+}
