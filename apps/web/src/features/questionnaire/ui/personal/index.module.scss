@@ -1,0 +1,56 @@
+.form {
+  margin-top: 1.5rem;
+
+  .title {
+    margin-bottom: 0.5rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.select {
+  width: 14rem;
+  margin-top: 1.5rem;
+
+  .title {
+    margin-bottom: 0.5rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+@media screen and (width <= 26.5625em) {
+  .form {
+    width: 100%;
+
+    .input {
+      width: 100%;
+    }
+  }
+
+  .select {
+    width: 100%;
+  }
+
+ .buttons {
+  flex-direction: column;
+
+  button {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+ }
+}
