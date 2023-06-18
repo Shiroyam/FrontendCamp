@@ -1,4 +1,5 @@
 @import "./vars";
+@import "./fonts";
 
 body {
   display: flex;
@@ -7,7 +8,7 @@ body {
   justify-content: center;
 
 
-  font-family: var(--font);
+  font-family: SB-Sans-Interface, sans-serif;
 
   background-color: var(--background-color);
 }
@@ -15,5 +16,5 @@ body {
 #root {
   width: 100%;
   max-width: 56rem;
-  margin-top: 5%;
+  margin-top: 25%;
 }
